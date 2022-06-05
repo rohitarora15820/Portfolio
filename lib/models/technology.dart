@@ -9,7 +9,7 @@ class TechnologyModel {
 
 class TechnologyConstants {
   static TechnologyModel python =
-      TechnologyModel("Python", AppConstants.pythonImage);
+      TechnologyModel("Figma", AppConstants.pythonImage);
   static TechnologyModel php = TechnologyModel("Python", AppConstants.phpImage);
   static TechnologyModel flutter =
       TechnologyModel("Flutter", AppConstants.flutterImage);
@@ -23,17 +23,22 @@ class TechnologyConstants {
       TechnologyModel("C++", AppConstants.cPlusImage);
   static TechnologyModel javascript =
       TechnologyModel("Javascript", AppConstants.javascriptImage);
-  static TechnologyModel swift =
-      TechnologyModel("Swift", AppConstants.swiftImage);
+  static TechnologyModel dart =
+      TechnologyModel("Dart", AppConstants.swiftImage);
   static TechnologyModel sceneKit =
       TechnologyModel("SceneKit", AppConstants.sceneKitImage);
+  static TechnologyModel reactNative =
+      TechnologyModel("React Native", AppConstants.reactImage);
+  static TechnologyModel next =
+      TechnologyModel("Next JS", AppConstants.nextImage);
+  static TechnologyModel figma =
+      TechnologyModel("Figma", AppConstants.figmaImage);
 
   static List<TechnologyModel> technologyLearned = [
     flutter,
-    swift,
-    cPlus,
-    python,
-    javascript,
-    flask
+    figma,
+    reactNative,
+    // javascript,
+    next,
   ];
 }

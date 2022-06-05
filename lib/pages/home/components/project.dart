@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/models/project.dart';
 import 'package:my_portfolio/provider/theme.dart';
@@ -24,7 +25,7 @@ class ProjectSection extends StatelessWidget {
 
   Widget _buildUi(double width, BuildContext context) {
     return ScrollConfiguration(
-      behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
+      behavior: ScrollConfiguration.of(context).copyWith(scrollbars: true),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -53,7 +54,7 @@ class ProjectSection extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: ref.watch(themeProvider).isDarkMode
                         ? const Color.fromARGB(75, 12, 12, 7)
-                        : Colors.grey[100],
+                        : const Color.fromARGB(75, 12, 12, 7),
                     borderRadius: BorderRadius.circular(5)),
                 child: Flex(
                   direction: ScreenHelper.isMobile(context)

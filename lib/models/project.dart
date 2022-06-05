@@ -26,75 +26,63 @@ class ProjectModel {
   static List<ProjectModel> projects = [
     ProjectModel(
       project: "Flutter App",
-      title: "Smart Store App",
+      title: "OMS App for Growing Businesses",
       description:
-          "The Idea came during the pandemics to solve the issue of social distancing in supermarkets.",
+          "An efficient solution to manage the lifecycle of your orders, track and sync information in real time, manage inventory and fulfill the orders and expectations of your customers.Explore the vast field of Omni channel order management mobile application uses today with Extension Technologies!",
       appPhotos: AppConstants.smartStoreImage,
-      projectLink: "https://github.com/AgnelSelvan/Smart-Store-Mobile-App",
+      projectLink: "https://www.youtube.com/watch?v=U2rF3InmPVI",
       techUsed: [
         TechnologyConstants.flutter,
-        TechnologyConstants.firebase,
-        TechnologyConstants.flask,
-        TechnologyConstants.python,
-        TechnologyConstants.razorPay
+        TechnologyConstants.figma,
       ],
-      buttonText: "Github Link",
+      // buttonText: "Video Link",
     ),
     ProjectModel(
-      project: "Swift App",
-      title: "Cross The Road Game",
-      description: "Cross the Road game developed using Swift and SceneKit",
+      project: "React Native App",
+      title: "TMS App for your Field Technicians",
+      description:
+          "Give your technicians access to multiple features to carry out field visits and resolve tickets through the Ticketing Management App.  Equips you with everything your service business needs to become more efficient and more profitable.",
       appPhotos: AppConstants.crossTheRoadImage,
-      projectLink: "https://github.com/AgnelSelvan/Cross-the-road",
+      projectLink: "https://www.youtube.com/watch?v=MpXZFpxRX3M",
       techUsed: [
-        TechnologyConstants.swift,
-        TechnologyConstants.sceneKit,
+        TechnologyConstants.figma,
+        TechnologyConstants.reactNative,
       ],
-      buttonText: "Github Link",
+      // buttonText: "Video Link",
     ),
     ProjectModel(
       project: "Flutter App",
-      title: "News Up App",
+      title: "LMS App for your Business",
       description:
-          "This application is used basically for viewing different news. Launched the app in Amazon AppStore",
+          "A pocket Lead management app providing you with a direct and fully customized platform to engage with leads, provide services, and act as a portal to incorporate Deals, discounts, nurturing, and conversions.",
       appPhotos: AppConstants.newsUpImage,
-      projectLink: "https://www.amazon.com/gp/product/B08669JDX7",
+      projectLink: "https://www.youtube.com/watch?v=l9ZzLuvLGjc",
       techUsed: [
+        TechnologyConstants.figma,
         TechnologyConstants.flutter,
       ],
     ),
     ProjectModel(
-      project: "Flutter App",
-      title: "Music Lab",
+      project: "Next JS Website",
+      title: "Website for Mobile App",
       description:
-          "A Simple Music Player App. Launched the app in Amazon AppStore",
-      appPhotos: AppConstants.musicLabImage,
-      projectLink: "https://www.amazon.com/gp/product/B08WL2XFGW",
+          "A website for mobile app development.  This website is built with Next JS and hosted on Vercel.",
+      appPhotos: AppConstants.webImage,
+      projectLink: "https://ticketing.excitor.tech/",
       techUsed: [
+        TechnologyConstants.figma,
         TechnologyConstants.flutter,
       ],
     ),
     ProjectModel(
-      project: "PHP Website",
-      title: "Computer Store",
-      description:
-          "This is a complete online e-commerce website of selling computer and seperate admin panel is built for handling the order request and only payement is added.",
-      appPhotos: AppConstants.computerStoreImage,
-      projectLink: "https://github.com/AgnelSelvan/computer-store.git",
-      techUsed: [
-        TechnologyConstants.php,
-        TechnologyConstants.razorPay,
-      ],
-    ),
-    ProjectModel(
-      project: "Python",
-      title: "Personal Face and Emotion Recognition",
-      description:
-          "The model will recognize each face and identify their name based on the trained model. CNN is used for training the dataset.",
+      project: "Figma Link",
+      title: "Figma Link of all the projects",
+      description: "Figma Link of all the projects",
       appPhotos: AppConstants.personalFaceImage,
-      projectLink: "https://github.com/AgnelSelvan/Emotion-Recognition.git",
+      projectLink:
+          "https://www.figma.com/file/5vP22PK6Nhwj46TkQCj9AD/UI-Designs?node-id=0%3A1",
       techUsed: [
-        TechnologyConstants.python,
+        TechnologyConstants.figma,
       ],
     ),
   ];

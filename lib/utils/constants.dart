@@ -14,10 +14,12 @@ double getMobileMaxWidth(BuildContext context) =>
     MediaQuery.of(context).size.width * .8;
 
 class AppConstants {
+  static const cvUrl =
+      "https://drive.google.com/file/d/1cWqdBviZ3drWZWkpIWlgClCSnye8n-9u/view?usp=sharing";
   static const linkedInUrl =
-      "https://www.linkedin.com/in/agnel-selvan-328421192/";
+      "https://www.linkedin.com/in/rohit-arora-33abb7175/";
   static const instagramUrl = "https://www.instagram.com/_agnel.selvan_/";
-  static const githubUrl = "https://github.com/AgnelSelvan";
+  static const githubUrl = "https://github.com/rohitarora15820/";
   static const mediumUrl = "https://medium.com/@agnelselvan";
 
   static const _assets = "assets/";
@@ -34,6 +36,7 @@ class AppConstants {
   static const linkedInImage = _socialImages + "linkedin-logo.png";
   static const instaImage = _socialImages + "instagram.png";
   static const githubImage = _socialImages + "github.png";
+  static const whatsappImage = _socialImages + "whatsapp.png";
   static const mediumImage = _socialImages + "medium.png";
 
   static const _techImages = _images + "technology/";
@@ -47,17 +50,27 @@ class AppConstants {
   static const swiftImage = _techImages + "swift.png";
   static const sceneKitImage = _techImages + "scenekit.jpeg";
   static const javascriptImage = _techImages + "javascript.png";
+  static const reactImage = _techImages + "react.png";
+  static const figmaImage = _techImages + "figma.png";
+  static const nextImage = _techImages + "next.png";
 
   static const _projectsImages = _images + "projects/";
-  static const smartStoreImage = _projectsImages + "1.jpeg";
-  static const crossTheRoadImage = _projectsImages + "2.jpeg";
-  static const newsUpImage = _projectsImages + "3.jpeg";
-  static const musicLabImage = _projectsImages + "4.jpeg";
-  static const personalFaceImage = _projectsImages + "5.jpeg";
+  static const smartStoreImage = _projectsImages + "oms.png";
+  static const crossTheRoadImage = _projectsImages + "tms.png";
+  static const newsUpImage = _projectsImages + "lms.png";
+  static const webImage = _projectsImages + "web.png";
+  static const personalFaceImage = _projectsImages + "figma.png";
   static const computerStoreImage = _projectsImages + "6.jpeg";
 
   static const _gifs = _outputs + "gif/";
   static const portfolioGif = _gifs + "mobile.gif";
+
+  static List<NameOnTap> cv = [
+    NameOnTap(
+      title: "Download CV",
+      onTap: () => Utilty.openUrl(cvUrl),
+    ),
+  ];
 
   static List<NameOnTap> socialLoginDatas = [
     NameOnTap(
@@ -71,19 +84,19 @@ class AppConstants {
           Utilty.openUrl(linkedInUrl);
         }),
     NameOnTap(
-        title: instaImage,
+        title: whatsappImage,
         onTap: () {
-          Utilty.openUrl(instagramUrl);
+          Utilty.openWhatsapp();
         }),
     NameOnTap(
         title: githubImage,
         onTap: () {
           Utilty.openUrl(githubUrl);
         }),
-    NameOnTap(
-        title: mediumImage,
-        onTap: () {
-          Utilty.openUrl(mediumUrl);
-        }),
+    // NameOnTap(
+    //     title: mediumImage,
+    //     onTap: () {
+    //       Utilty.openUrl(mediumUrl);
+    //     }),
   ];
 }

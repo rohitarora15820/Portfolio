@@ -58,7 +58,7 @@ class _AboutSectionState extends State<AboutSection> {
                         height: 25.0,
                       ),
                       Text(
-                        "I'm Agnel Selvan, A Flutter and iOS Developer and Technical Blog Writer",
+                        "I'm Rohit Arora, A Flutter/React Native Developer and UI Designer",
                         style: GoogleFonts.josefinSans(
                           fontWeight: FontWeight.bold,
                           height: 1.3,
@@ -69,7 +69,7 @@ class _AboutSectionState extends State<AboutSection> {
                         height: 10.0,
                       ),
                       const Text(
-                        "I have done my Computer Science graduation at Xavier's Institute of Engineering on 2021. I have been developing Mobile Apps for more than 1 years now. I have worked as a Team and as an Indivual in various organization and launched the apps in Playstore as well as in Appstore. In my free time I use to write Technical Blog in Medium. Always love to learn new technologies and to succeed in an environment of growth and excellence and earn a job which provides me job satisfaction and self-development and help me achieve personal as well as organisational goals.",
+                        "I have done my Computer Science graduation at Kurukshetra University on 2021. I have been developing Mobile Apps for more than 1 years now. I have worked as a Team and as an Indivual in organization and launched the apps in Playstore as well as in Appstore. In addition to that i had designed somescreens and prototype in Figma for various clients as well as for my current organization. Always love to learn new technologies and to succeed in an environment of growth and excellence and earn a job which provides me job satisfaction and self-development and help me achieve personal as well as organisational goals.",
                         style: TextStyle(
                           color: kCaptionColor,
                           height: 1.5,
@@ -105,7 +105,7 @@ class _AboutSectionState extends State<AboutSection> {
                                                     .watch(themeProvider)
                                                     .isDarkMode
                                                 ? Colors.grey[800]
-                                                : Colors.grey[200],
+                                                : Colors.grey[800],
                                             borderRadius:
                                                 BorderRadius.circular(4.0),
                                           ),

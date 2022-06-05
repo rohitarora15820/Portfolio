@@ -29,14 +29,14 @@ class HeaderLogo extends StatelessWidget {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: "A ",
+                    text: "Software",
                     style: GoogleFonts.josefinSans(
                       fontSize: 26.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.5,
                       color: ref.watch(themeProvider).isDarkMode
                           ? Colors.white
-                          : Colors.black,
+                          : Colors.white,
                     ),
                   ),
                   TextSpan(
@@ -88,21 +88,21 @@ class HeaderRow extends StatelessWidget {
           onTap: () {},
           iconData: Icons.contact_mail,
         ),
-        NameOnTap(
-          title: "Blogs",
-          onTap: () {
-            Utilty.openUrl(AppConstants.mediumUrl);
-          },
-          iconData: Icons.article,
-        ),
-        NameOnTap(
-          title: "Themes",
-          onTap: () {
-            Utilty.openUrl(AppConstants.mediumUrl);
-          },
-          iconData: Icons.light_mode_outlined,
-          isDarkTheme: true,
-        ),
+        // NameOnTap(
+        //   title: "Blogs",
+        //   onTap: () {
+        //     Utilty.openUrl(AppConstants.mediumUrl);
+        //   },
+        //   iconData: Icons.article,
+        // ),
+        // NameOnTap(
+        //   title: "Themes",
+        //   onTap: () {
+        //     Utilty.openUrl(AppConstants.mediumUrl);
+        //   },
+        //   iconData: Icons.light_mode_outlined,
+        //   isDarkTheme: true,
+        // ),
       ];
 
   @override
@@ -146,7 +146,7 @@ class HeaderRow extends StatelessWidget {
                         ),
                 )
                 .toList(),
-            themeSwitch
+            // themeSwitch
           ]);
         },
       ),

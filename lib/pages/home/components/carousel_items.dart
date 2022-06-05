@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -5,10 +7,11 @@ import 'package:my_portfolio/utils/constants.dart';
 import 'package:my_portfolio/utils/utils.dart';
 
 import '../../../models/carousel_item_model.dart';
+import 'package:open_file/open_file.dart';
 
 List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
     List.generate(
-      5,
+      1,
       (index) => CarouselItemModel(
         text: SizedBox(
           height: carouselContainerHeight,
@@ -33,7 +36,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                       height: 18.0,
                     ),
                     Text(
-                      "Agnel Selvan".toUpperCase(),
+                      "Rohit Arora".toUpperCase(),
                       style: GoogleFonts.josefinSans(
                         fontSize: 40.0,
                         fontWeight: FontWeight.w900,
@@ -47,7 +50,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                     Row(
                       children: const [
                         Text(
-                          "Software Engineer, ",
+                          "UI Designer and Software Developer, ",
                           style: TextStyle(
                             color: kCaptionColor,
                             fontSize: 15.0,
@@ -66,7 +69,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                           width: 2,
                         ),
                         Text(
-                          "Mumbai",
+                          "India",
                           style: TextStyle(
                             color: kCaptionColor,
                             fontSize: 15.0,
@@ -78,32 +81,33 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                     const SizedBox(
                       height: 25.0,
                     ),
-                    MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: kPrimaryColor,
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        height: 48.0,
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 28.0,
-                        ),
-                        child: TextButton(
-                          onPressed: () {
-                            Utilty.openUrl(AppConstants.linkedInUrl);
-                          },
-                          child: Text(
-                            "Let's Talk",
-                            style: TextStyle(
-                              color: Colors.grey[800],
-                              fontSize: 13.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
+
+                    // MouseRegion(
+                    //   cursor: SystemMouseCursors.click,
+                    //   child: Container(
+                    //     decoration: BoxDecoration(
+                    //       color: kPrimaryColor,
+                    //       borderRadius: BorderRadius.circular(8.0),
+                    //     ),
+                    //     height: 48.0,
+                    //     padding: const EdgeInsets.symmetric(
+                    //       horizontal: 28.0,
+                    //     ),
+                    //     child: TextButton(
+                    //       onPressed: () {
+                    //         Utilty.openWhatsapp();
+                    //       },
+                    //       child: Text(
+                    //         "Download CV",
+                    //         style: TextStyle(
+                    //           color: Colors.grey[800],
+                    //           fontSize: 13.0,
+                    //           fontWeight: FontWeight.bold,
+                    //         ),
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ),
@@ -127,7 +131,32 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                         .toList(),
                   ),
                 ),
-              )
+              ),
+              Positioned(
+                bottom: 200,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: kPrimaryColor,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  height: 48.0,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 28.0,
+                  ),
+                  child: TextButton(
+                    onPressed: () {
+                      Utilty.openUrl(AppConstants.cvUrl);
+                    },
+                    child: Text(
+                      "Download CV",
+                      style: GoogleFonts.josefinSans(
+                          color: Colors.grey[800],
+                          fontSize: 13.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),

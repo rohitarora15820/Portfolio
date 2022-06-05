@@ -17,13 +17,13 @@ final List<DesignProcess> designProcesses = [
     subtitle: "",
   ),
   DesignProcess(
-    title: "Develop",
-    imagePath: "assets/images/develop.png",
+    title: "Design",
+    imagePath: "assets/images/design.png",
     subtitle: "",
   ),
   DesignProcess(
-    title: "Document It",
-    imagePath: "assets/images/blog.png",
+    title: "Develop",
+    imagePath: "assets/images/develop.png",
     subtitle: "",
   ),
 ];
@@ -42,7 +42,7 @@ class ServiceSection extends StatelessWidget {
       color: Colors.yellow[400]!,
     ),
     NameIconColor(
-      title: "Technical Blog Writer",
+      title: "UI Designer",
       iconData: Icons.article,
       color: Colors.blue[400]!,
     ),

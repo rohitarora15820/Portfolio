@@ -6,10 +6,10 @@ import 'package:my_portfolio/utils/screen_helper.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 final List<Stat> stats = [
-  // Stat(count: "43", text: "Clients"),
-  Stat(count: "5+", text: "Projects"),
-  Stat(count: "4", text: "Awards"),
-  Stat(count: "1", text: "Years\nExperience"),
+  Stat(count: "3", text: "Clients"),
+  Stat(count: "3+", text: "Projects"),
+  // Stat(count: "4", text: "Awards")
+  Stat(count: "10", text: "Month\nExperience"),
 ];
 
 class PortfolioStats extends StatelessWidget {
