@@ -133,7 +133,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                 ),
               ),
               Positioned(
-                bottom: 200,
+                bottom: 100,
                 child: Container(
                   decoration: BoxDecoration(
                     color: kPrimaryColor,
