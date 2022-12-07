@@ -15,7 +15,7 @@ double getMobileMaxWidth(BuildContext context) =>
 
 class AppConstants {
   static const cvUrl =
-      "https://drive.google.com/file/d/1bkfWCOyPPZu83tew7lRIJjq0xG7ocTrn/view?usp=share_link";
+      "https://drive.google.com/file/d/1Pi3pV5U0OfuEDSVklclEIcy_vAaOJAKW/view?usp=share_link";
   static const linkedInUrl =
       "https://www.linkedin.com/in/rohit-arora-33abb7175/";
   static const instagramUrl = "";
