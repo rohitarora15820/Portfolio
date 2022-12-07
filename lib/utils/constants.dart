@@ -15,12 +15,12 @@ double getMobileMaxWidth(BuildContext context) =>
 
 class AppConstants {
   static const cvUrl =
-      "https://drive.google.com/file/d/1cWqdBviZ3drWZWkpIWlgClCSnye8n-9u/view?usp=sharing";
+      "https://drive.google.com/file/d/1bkfWCOyPPZu83tew7lRIJjq0xG7ocTrn/view?usp=share_link";
   static const linkedInUrl =
       "https://www.linkedin.com/in/rohit-arora-33abb7175/";
-  static const instagramUrl = "https://www.instagram.com/_agnel.selvan_/";
+  static const instagramUrl = "";
   static const githubUrl = "https://github.com/rohitarora15820/";
-  static const mediumUrl = "https://medium.com/@agnelselvan";
+  static const mediumUrl = "";
 
   static const _assets = "assets/";
   static const _outputs = "outputs/";
